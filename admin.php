@@ -18,34 +18,26 @@ if (array_key_exists("logout", $_GET)) {
     exit;
 }
 
-//tyto formularove operace budeme zpracovavat jen pokud je uzivatel opravu prihlaseny
 if(array_key_exists("jePrihlasen", $_SESSION)) {
-    
-    //uzivatel chce stranku ulozit
+
     if (array_key_exists("aktualizovat", $_POST)) {
         $obsahStranky = $_POST["obsah-stranky"];
         
         if (array_key_exists("edit", $_GET)) {
-            //pokud stranka existuje, tak si ji vytahneme z pole
             $idStranky = $_GET["edit"];
             $aktivniStranka = $poleStranek[$idStranky];
         }else{
             $idStranky = ""; //toto znamena ze se jedna o uplne novou stranku
-            //stranka v poli neexistuje, vytvorime novy objekt
             $aktivniStranka = new Stranka("", "", "", "");
         }
-        
-        //funkce trim odstrani vsehcny mezery pred a za textem
+      
         $noveId = trim($_POST["id-stranky"]);
         $noveId = $_POST["id-stranky"];
         $noveMenu = $_POST["menu-stranky"];
         $novyTitulek = $_POST["titulek-stranky"];
         $novyObrazek = $_POST["obrazek-stranky"];
 
-        //hlidac
-        //zda id neni prazdne?
         if ($noveId == "") {
-            //id je prazdne logiku ukoncime a presmerujeme uzivatele pryc
             header("Location: ?");
             exit;
         }
@@ -64,20 +56,15 @@ if(array_key_exists("jePrihlasen", $_SESSION)) {
         exit;
     }
 
-    //uzivatel chce zobrazit formular pro editovani
     if (array_key_exists("edit", $_GET)) {
-        //admin.php?edit=rezervace
         $idStranky = $_GET["edit"];
-        //ulozime do promnne obejkt stranky
         $aktivniStranka = $poleStranek[$idStranky];
     }
 
-    //uzivatel chce zacit editovat novou stranku
     if (array_key_exists("nova-stranka", $_POST)) {
         $aktivniStranka = new Stranka("", "", "", "");
     }
 
-     //uzivatel chce smazat stranku
      if (array_key_exists("delete", $_GET)) {
         $idStranky = $_GET["delete"];
         $poleStranek[$idStranky]->smazSe();

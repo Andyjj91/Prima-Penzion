@@ -1,10 +1,8 @@
 <?php
 require_once "./data.php";
 
-//vychozi stranka, homepage
 $idStranky = array_keys($poleStranek)[0];
 
-//zjisitme jakou stranku uzivatel chce zobrazit
 if (array_key_exists("stranka", $_GET)) {
 
     if (array_key_exists($_GET["stranka"], $poleStranek)) {
@@ -64,9 +62,6 @@ if (array_key_exists("stranka", $_GET)) {
     <?php
 
         echo $poleStranek[$idStranky]->getObsah();
-
-        //require "./{$idStranky}.html";
-        //echo file_get_contents("./galerie.html");
 
     ?>
 

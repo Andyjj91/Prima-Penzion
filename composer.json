@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tinymce/tinymce": "^7.3",
+        "primakurzy/responsivefilemanager": "^3.0"
+    }
+}

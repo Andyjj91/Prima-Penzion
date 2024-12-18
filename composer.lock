@@ -1,0 +1,110 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "dd8875e195e896acaea71e16fe83fb0f",
+    "packages": [
+        {
+            "name": "primakurzy/responsivefilemanager",
+            "version": "v3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PrimaKurzy-cz/responsivefilemanager.git",
+                "reference": "74f6c66bd75e2738d81e2c18ffcbb140fcdaa364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PrimaKurzy-cz/responsivefilemanager/zipball/74f6c66bd75e2738d81e2c18ffcbb140fcdaa364",
+                "reference": "74f6c66bd75e2738d81e2c18ffcbb140fcdaa364",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josef Kyrian / PrimaKurzy.cz",
+                    "email": "josef.kyrian@primakurzy.cz"
+                }
+            ],
+            "description": "Responsive FileManager for TinyMCE and CKEditor (For Educational Purposes Only)",
+            "support": {
+                "issues": "https://github.com/PrimaKurzy-cz/responsivefilemanager/issues",
+                "source": "https://github.com/PrimaKurzy-cz/responsivefilemanager/tree/v3.0"
+            },
+            "time": "2024-03-07T08:01:33+00:00"
+        },
+        {
+            "name": "tinymce/tinymce",
+            "version": "7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tinymce/tinymce-dist.git",
+                "reference": "e92ab7adaa3db1752639361ded41a7abb2d28996"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/e92ab7adaa3db1752639361ded41a7abb2d28996",
+                "reference": "e92ab7adaa3db1752639361ded41a7abb2d28996",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "tinymce.js",
+                        "plugins/*/plugin.js",
+                        "themes/*/theme.js",
+                        "models/*/model.js",
+                        "icons/*/icons.js"
+                    ],
+                    "files": [
+                        "tinymce.min.js",
+                        "plugins/*/plugin.min.js",
+                        "themes/*/theme.min.js",
+                        "models/*/model.min.js",
+                        "skins/**",
+                        "icons/*/icons.min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Web based JavaScript HTML WYSIWYG editor control.",
+            "homepage": "https://www.tiny.cloud/",
+            "keywords": [
+                "contenteditable",
+                "editing",
+                "html",
+                "javascript",
+                "rich editor",
+                "rich text",
+                "rich text editor",
+                "richtext",
+                "rte",
+                "text",
+                "tinymce",
+                "wysiwyg"
+            ],
+            "support": {
+                "source": "https://github.com/tinymce/tinymce-dist/tree/7.3.0"
+            },
+            "time": "2024-08-07T06:30:33+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
